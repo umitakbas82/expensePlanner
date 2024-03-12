@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {path:'expxense-planner',loadChildren:()=>import("./expense-planner/expense-planner.module").then(x=>x.ExpensePlannerModule)}
+  {path:'expense-planner',loadChildren:()=>import("./expense-planner/expense-planner.module").then(x=>x.ExpensePlannerModule)}
 ];
 
  
