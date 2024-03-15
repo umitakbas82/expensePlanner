@@ -35,6 +35,7 @@ toggleForm(form:'login'|'register'){
 
 login(){
   if(this.loginForm.valid){
+    this.snackBar.open('Login Success','Close',{duration:3000})
     console.log("LOGIN INFO", this.loginForm.value);
     this.router.navigate(['dashboard']);
   }else{
@@ -45,6 +46,7 @@ login(){
 register(){
   if(this.registerForm.valid){
     console.log("REGISTER INFO", this.registerForm.value);
+    this.snackBar.open('Registeration Success','Close',{duration:3000})
     setTimeout(() => {
       window.location.reload();
     }, 2000);

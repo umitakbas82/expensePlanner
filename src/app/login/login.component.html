@@ -11,11 +11,11 @@
                 </div>
                 <button type="submit">Login</button>
                 <p (click)="toggleForm('register')">Don't have an account
-                <span>Register</span>
+                <span style="cursor: pointer;">Register</span>
                 </p>
             </form>
 <form *ngIf="activeFrom==='register'" [formGroup]="registerForm" (ngSubmit)="register()" >
-<h2>Register</h2>
+<h2>REGISTER</h2>
 <div class="form-group">
     <input type="username" formControlName="username" placeholder="username">
 </div>
@@ -27,7 +27,7 @@
 </div>
 <button type="submit">Login</button>
 <p (click)="toggleForm('login')">Already have an account
-<span>Login</span>
+<span style="cursor: pointer;">Login</span>
 </p>
 </form>
             
