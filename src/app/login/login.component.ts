@@ -42,4 +42,18 @@ login(){
   }
 }
 
+register(){
+  if(this.registerForm.valid){
+    console.log("REGISTER INFO", this.registerForm.value);
+    setTimeout(() => {
+      window.location.reload();
+    }, 2000);
+    this.router.navigate(["login"])
+  }else{
+    this.snackBar.open('Please fill in all filds correctly', 'Close',{duration:3000})
+  }
+ 
+
+}
+
 }
